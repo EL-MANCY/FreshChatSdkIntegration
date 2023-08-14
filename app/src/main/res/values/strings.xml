@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FreshChat Paymob</string>
+    <string name="freshchat_file_provider_authority">com.example.freshchatpaymob.provider</string>
+
+</resources>
