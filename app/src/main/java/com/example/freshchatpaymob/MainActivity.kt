@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         Freshchat.getInstance(applicationContext)?.init(freshchatConfig)
         val chatButton = findViewById<Button>(R.id.chatButton)
         chatButton.setOnClickListener {
-            // Open Freshchat chat UI here
             Freshchat.showConversations(this)
         }
 
