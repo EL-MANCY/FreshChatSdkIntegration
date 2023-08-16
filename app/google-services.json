@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "770867933510",
+    "project_id": "paymob-freshchah",
+    "storage_bucket": "paymob-freshchah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770867933510:android:7b4579cde19a9b974a3547",
+        "android_client_info": {
+          "package_name": "com.example.freshchatpaymob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770867933510-to5s9lsmbmmcj94okkte25f31oa7amk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbZq8AKF608hTZkqOfFPwyxFLtNl6DClo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770867933510-to5s9lsmbmmcj94okkte25f31oa7amk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

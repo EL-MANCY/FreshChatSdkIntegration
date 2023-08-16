@@ -1,16 +1,22 @@
 package com.example.freshchatpaymob
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.freshchat.consumer.sdk.Freshchat
 import com.freshchat.consumer.sdk.FreshchatConfig
+import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val freshchatConfig = FreshchatConfig("e85b0e65-50c0-416f-a74a-f572755ca002", "5f478d19-a586-4969-960f-5350193ac7ae")
+        FirebaseApp.initializeApp(this)
+
+        val freshchatConfig = FreshchatConfig(
+            BuildConfig.FRESHCHAT_APP_ID,
+            BuildConfig.FRESHCHAT_APP_KEY
+        )
         freshchatConfig.domain = "msdk.freshchat.com"
         freshchatConfig.isCameraCaptureEnabled = true
         freshchatConfig.isGallerySelectionEnabled = true
@@ -22,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         chatButton.setOnClickListener {
             Freshchat.showConversations(this)
         }
-
     }
+
+
 }

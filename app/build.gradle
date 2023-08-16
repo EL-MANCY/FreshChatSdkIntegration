@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id "com.google.gms.google-services"
 
 }
 apply plugin: 'kotlin-android'
@@ -16,8 +17,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
 
+        buildConfigField "String", "FRESHCHAT_APP_ID", "\"b3baf9e2-2d17-4b62-9ecc-aaa2faaaebb6\""
+        buildConfigField "String", "FRESHCHAT_APP_KEY", "\"1c056a31-8b4b-4d90-98d0-aed7becd8956\""    }
     buildTypes {
         release {
             minifyEnabled false
@@ -45,14 +47,18 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.2.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'com.github.freshworks:freshchat-android:4.2.0'
+    implementation 'com.github.freshworks:freshchat-android:5.9.2'
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
      implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.0'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0'
+
+    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
+
 }
