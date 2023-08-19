@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FreshChat Paymob</string>
+    <string name="freshchat_file_provider_authority">com.example.freshchatpaymob.provider</string>
+    <string name="Open_Chat">فتح محادثات</string>
+    <string name="freshchat_activity_title_channel_list">محادثات</string>
+    <string name="freshchat_chat_message_composer_hint">اكتب رساله</string>
+    <string name="freshchat_chat_capture_from_camera">التقط صورة</string>
+    <string name="freshchat_chat_select_from_gallery">تحميل صورة من المعرض</string>
+    <string name="freshchat_chat_select_file">اختر ملف</string>
+
+
+</resources>
