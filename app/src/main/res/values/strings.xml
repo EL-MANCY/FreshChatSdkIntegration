@@ -2,6 +2,7 @@
     <string name="app_name">FreshChat Paymob</string>
     <string name="freshchat_file_provider_authority">com.example.freshchatpaymob.provider</string>
     <string name="Open_Chat">Open Chat</string>
+    <string name="Switch_Language">Switch Language</string>
     <string name="freshchat_activity_title_channel_list">Conversations</string>
     <string name="freshchat_chat_message_composer_hint">Type a xxnnx</string>
 
